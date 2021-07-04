@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="user_name">User Name</string>
+    <string name="type_your_username_hint">Type your username</string>
+    <string name="corresponding_password_hint">Type the corresponding password</string>
+    <string name="login">Login</string>
+    <string name="create_login">Create a new Access</string>
+    <string name="welcome_title">Pink Shoe Store</string>
+    <string name="welcome_description">Founded in 1800 by the enterprising brothers Carlos and Carolina,
+        Pink Shoe Store is today the largest fashion women\'s footwear retail brand in X America,
+        bringing together concept, high quality and contemporary design.  The brand\'s consolidation in
+        the domestic market can also be seen in its history of awards: elected seven times Best Franchise in
+        X in the Clothing, Footwear and Accessories Segment (Small Companies
+        and Grandes Negócios magazine); Choose your favorite Pink Shoe, we\'re waiting for you.</string>
+    <string name="instructions_button">Follow to Instructions</string>
+    <string name="instructions_title">What you need to know!!</string>
+    <string name="instructions_description">Click the button to check out our list of shoes. You can also add your used shoes for sale. Add and then talk to us</string>
+    <string name="see_shoes">Lets see the shoes</string>
+    <string name="about">About</string>
+    <string name="logout">LogOut</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="instructions">Instructions</string>
+    <string name="shoes_list">Shoes List</string>
+
+    <string name="shoe_name">Shoe Name</string>
+    <string name="shoe_company">Shoe Company</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="shoe_description">Shoe Description</string>
+    <string name="shoe_save">Save</string>
+    <string name="cancel">Cancel</string>
+
+
+</resources>
