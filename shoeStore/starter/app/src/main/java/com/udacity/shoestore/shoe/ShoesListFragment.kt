@@ -65,7 +65,8 @@ class ShoesListFragment : Fragment() {
         params.setMargins(12, 24, 12, 24)
 
         myTextShoeName.layoutParams = params
-        myTextShoeName.text = shoe.name
+        myTextShoeName.text = " Shoe Name: ${shoe.name} - Company: ${shoe.company} " +
+                "- Size: ${shoe.size} - Description: ${shoe.description} "
         myTextShoeName.setTextAppearance(R.style.ShoeListItem)
         myTextShoeName.setPadding(12,24,12,24)
 

@@ -4,11 +4,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+
         <variable
-            name="shoesListViewModel"
+            name="shoesViewModel"
             type="com.udacity.shoestore.shoe.ShoesViewModel" />
     </data>
 
+    <!--    This one was choose because it was better to organize the views, with borders
+          and margins-->
     <androidx.constraintlayout.widget.ConstraintLayout
         tools.context="com.udacity.shoestore.navigation.ShoeListFragment"
         android:layout_width="match_parent"
@@ -23,7 +26,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_shoes"
-            app:tint="@color/colorAccent"/>
+            app:tint="@color/colorAccent" />
 
         <ScrollView
             android:id="@+id/scrollView"
@@ -35,6 +38,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView">
 
+            <!--    Since the items were going to be added programmatically a simpler
+            layout is the best way to organize the new items vertically-->
             <LinearLayout
                 android:id="@+id/ListShoesItem"
                 android:layout_width="match_parent"

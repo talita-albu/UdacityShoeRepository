@@ -26,7 +26,7 @@
             android:id="@+id/action_instructionsFragment_to_shoesListFragment"
             app:destination="@id/shoesListFragment"
             app:launchSingleTop="true"
-            app:popUpTo="@id/loginFragment"
+            app:popUpTo="@id/welcomeFragment"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
@@ -43,7 +43,10 @@
         android:label="ShoeDetailFragment" >
         <action
             android:id="@+id/action_shoeDetailFragment_to_shoesListFragment"
-            app:destination="@id/shoesListFragment" />
+            app:destination="@id/shoesListFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/shoesListFragment"
+            app:popUpToInclusive="false" />
         <argument
             android:name="shoe"
             app:argType="com.udacity.shoestore.models.Shoe"

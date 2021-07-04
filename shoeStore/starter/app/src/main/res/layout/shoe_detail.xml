@@ -5,11 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
+        <import type="com.udacity.shoestore.models.Converter" />
+
         <variable
-            name="shoesListViewModel"
-            type="com.udacity.shoestore.shoe.ShoesViewModel" />
+            name="shoesViewModel"
+            type="com.udacity.shoestore.models.Shoe" />
     </data>
 
+    <!--    This one was choose because it was better to organize the views, with borders
+          and margins-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -35,6 +40,7 @@
             android:ems="10"
             android:hint="@string/shoe_name"
             android:inputType="textPersonName"
+            android:text="@={shoesViewModel.name}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -49,6 +55,7 @@
             android:ems="10"
             android:hint="@string/shoe_company"
             android:inputType="textPersonName"
+            android:text="@={shoesViewModel.company}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextShoeName" />
@@ -63,6 +70,7 @@
             android:ems="10"
             android:hint="@string/shoe_size"
             android:inputType="number"
+            android:text="@={Converter.doubleToString(shoesViewModel.size)}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextShoeCompany" />
@@ -77,6 +85,7 @@
             android:ems="10"
             android:hint="@string/shoe_description"
             android:inputType="textPersonName"
+            android:text="@={shoesViewModel.description}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextShoeSize" />
